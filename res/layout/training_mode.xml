@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+<Button
+    android:id="@+id/btnOther"
+    android:layout_width="100dp"
+    android:layout_height="30dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignRight="@+id/startTraining"
+    android:layout_marginTop="14dp"
+    android:text="change user"
+    android:textSize="12sp" />
+
+<Button
+    android:id="@+id/endTraining"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/Pause"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="111dp"
+    android:text="End My Training" />
+
+<Button
+    android:id="@+id/startTraining"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/Pause"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="32dp"
+    android:text="Start My Training"
+    android:textSize="16sp" />
+
+<Button
+    android:id="@+id/Pause"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/endTraining"
+    android:layout_alignLeft="@+id/startTraining"
+    android:layout_marginBottom="26dp"
+    android:text="Pause" />
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/btnOther"
+    android:layout_marginBottom="26dp" >
+    
+    <TableRow>
+    <TextView 
+        android:id="@+id/xcoor"
+        android:text="X Coordinate: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+    </TableRow>
+    
+    <TableRow>
+    <TextView 
+        android:id="@+id/ycoor"
+        android:text="Y Coordinate: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+    </TableRow>
+    
+    <TableRow>
+    <TextView 
+        android:id="@+id/zcoor"
+        android:text="Z Coordinate: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+    </TableRow>
+        
+</TableLayout>
+
+</RelativeLayout>

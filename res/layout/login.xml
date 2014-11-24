@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    tools:context=".MainActivity" >  
+  
+    <TextView  
+        android:id="@+id/login"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_margin="50dp"  
+        android:gravity="center_horizontal"    
+        android:textSize="25dp"  
+        android:text="Login to my tracker" />  
+    <TextView   
+        android:id="@+id/txtname"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_below="@id/login"  
+        android:layout_marginRight="5dp"  
+        android:layout_marginBottom="30dp"  
+        android:textSize="20dp"  
+        android:text="Username:"/>  
+    <EditText   
+        android:id="@+id/edname"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_marginBottom="30dp"  
+        android:layout_below="@id/login"  
+        android:layout_toRightOf="@id/txtname"  
+        android:layout_alignParentRight="true"  
+         android:textSize="14dp" 
+         android:hint="Please enter your name here"/>  
+        
+    
+    <LinearLayout   
+        android:layout_below="@id/edname"  
+        android:orientation="vertical"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_marginTop="10dp"  
+        android:gravity="center_horizontal" >  
+    <Button
+        android:id="@+id/btlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+    <Button   
+        android:id="@+id/btregister"  
+        android:layout_height="wrap_content"  
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"    
+        android:text="I am a new user"/>
+
+   
+  
+      </LinearLayout>  
+  
+</RelativeLayout>  

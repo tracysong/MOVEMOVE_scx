@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Button
+    android:id="@+id/btnOther1"       
+         android:layout_width="100dp"
+       android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+       android:text="change user"
+       android:layout_marginBottom="32dp"
+      android:layout_alignParentRight="true"
+    android:textSize="12sp"
+    />
+
+    <Button
+        android:id="@+id/Pause"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="pause" />
+
+    <Button
+        android:id="@+id/Resume"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="resume" />
+    
+    <TextView 
+        android:id="@+id/txtcalorie"
+        android:text="Your progress"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"/>
+
+    
+    
+     <com.scx.movemove.view.MyProgress 
+         android:id="@+id/pbHor"
+         style="@android:style/Widget.ProgressBar.Horizontal"
+         android:layout_width="fill_parent"
+         android:layout_height="30dp"
+         android:visibility="visible"
+         android:max="100"   
+          />
+
+     <TextView
+         android:id="@+id/check"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:text="Click to check how to ACE your target today!" />
+
+      <RelativeLayout android:id="@+id/rl_name"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content" android:gravity="right"  
+        android:padding="10dp">  
+        <Button
+        android:id="@+id/btnWalk1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnDetect"
+        android:layout_below="@+id/btnDetect"
+        android:text="walking" 
+        android:textSize="9.5sp"/>
+
+    <Button
+        android:id="@+id/btnRun1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnWalk1"
+        android:layout_alignBottom="@+id/btnWalk1"
+        android:layout_toRightOf="@+id/btnWalk1"
+        android:text="running" 
+        android:textSize="9.5sp"/>
+
+    <Button
+        android:id="@+id/btnClimbingStairs1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnRun1"
+        android:layout_alignBottom="@+id/btnRun1"
+        android:layout_toRightOf="@+id/btnRun1"
+        android:text="Climbing Stairs" 
+        android:textSize="9.5sp"/>
+
+    <Button
+        android:id="@+id/btnDescendingStairs1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnClimbingStairs1"
+        android:layout_alignBottom="@+id/btnClimbingStairs1"
+        android:layout_toRightOf="@+id/btnClimbingStairs1"
+        android:text="Descending Stairs" 
+        android:textSize="9.5sp"/> 
+          <Button
+        android:id="@+id/btnBike"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnDescendingStairs1"
+        android:layout_alignBottom="@+id/btnDescendingStairs1"
+        android:layout_toRightOf="@+id/btnDescendingStairs1"
+        android:text="Biking" 
+        android:textSize="9.5sp"/> 
+          
+    </RelativeLayout>  
+    
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="56dp" >
+
+    <TableRow>
+    <TextView 
+        android:id="@+id/activity"
+        android:text="Activity: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="13sp"
+    />
+    </TableRow>  
+    <TableRow>
+
+        <TextView
+            android:id="@+id/Calorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calorie burned: "
+            android:textSize="13sp" />
+
+    </TableRow>
+
+</TableLayout>
+
+</LinearLayout>
